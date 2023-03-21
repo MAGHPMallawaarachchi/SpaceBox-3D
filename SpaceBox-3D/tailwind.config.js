@@ -1,9 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.aspx'],
-  theme: {
-    extend: {},
-  },
+    content: [
+        './**/*.aspx',
+        './**/*.Master',
+    ],
+    theme: {
+        extend: {
+            colors: {
+                'maincolor': '#2F2F2F',
+                'primary-yellow': '#FFCB74',
+                'h1-color': '#E6A02D',
+            },
+            fontFamily: {
+                'readex': ['Readex Pro', 'sans-serif'],
+            }
+        },
+    },
     plugins: [
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),

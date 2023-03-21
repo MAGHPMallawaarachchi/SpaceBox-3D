@@ -2,10 +2,21 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <link href="./wwwroot/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <main>
         
-        <h1 class="text-red-200">SpaceBox 3D</h1>
+        <div class="flex flex-col gap-[100px] justify-center items-center h-screen">
+            <h1 class="flex text-h1-color text-[140px] justify-center font-readex">SpaceBox 3D</h1>
+    
+            <p class="flex justify-center gap-[80px]">
+                <asp:Button ID="btnShapes" runat="server" Text="Shapes" BackColor="#FFCB74" BorderColor="#FFCB74" BorderStyle="Solid" BorderWidth="1px" Font-Names="Readex Pro Deca Medium" Font-Size="24pt" ForeColor="#2F2F2F" Height="80px" Width="240px" style="border-radius: 30px;" />
+                <asp:Button ID="btnBraille" runat="server" Text="Braille" BackColor="#3B3B3B" BorderColor="#FFCB74" BorderStyle="Solid" BorderWidth="1px" Font-Names="Readex Pro Deca Medium" Font-Size="24pt" ForeColor="#FFCB74" Height="80px" Width="240px" style="border-radius: 30px;"/>
+            </p>
+        </div>
+        
         
     </main>
 
