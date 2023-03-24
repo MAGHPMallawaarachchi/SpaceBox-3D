@@ -121,7 +121,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="css\tailwind.css" />
+    <Content Include="Content\tailwind.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="postcss.config.js" />
@@ -155,7 +155,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="tailwind.config.js" />
-    <Content Include="wwwroot\css\styles.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="package.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
