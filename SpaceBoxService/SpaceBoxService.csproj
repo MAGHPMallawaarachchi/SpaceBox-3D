@@ -67,15 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BrailleService.asmx" />
+    <Content Include="BrailleConverter.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrailleFactory.cs" />
-    <Compile Include="BrailleService.asmx.cs">
-      <DependentUpon>BrailleService.asmx</DependentUpon>
+    <Compile Include="BrailleConverter.asmx.cs">
+      <DependentUpon>BrailleConverter.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BrailleFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -15,6 +15,15 @@ namespace SpaceBox_3D
     {
 
         /// <summary>
+        /// TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox;
+
+        /// <summary>
         /// btnConvert control.
         /// </summary>
         /// <remarks>
@@ -33,13 +42,22 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.Button btnClear;
 
         /// <summary>
-        /// Panel1 control.
+        /// braillePreviewPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Panel braillePreviewPanel;
+
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// btnPrint control.

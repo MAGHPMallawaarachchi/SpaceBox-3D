@@ -803,3 +803,4 @@ select {
 .focus\:ring-primary-yellow:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 203 116 / var(--tw-ring-opacity));
+}
