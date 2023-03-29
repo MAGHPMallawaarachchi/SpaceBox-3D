@@ -11,8 +11,17 @@ namespace SpaceBox_3D
 {
 
 
-    public partial class Contact
+    public partial class Braille
     {
+
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// TextBox control.
@@ -42,6 +51,24 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.Button btnClear;
 
         /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
+        /// DotAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DotAmount;
+
+        /// <summary>
         /// braillePreviewPanel control.
         /// </summary>
         /// <remarks>
@@ -51,13 +78,13 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.Panel braillePreviewPanel;
 
         /// <summary>
-        /// Label1 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
         /// btnPrint control.

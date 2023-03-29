@@ -667,8 +667,15 @@ select {
     max-width: 1536px;
   }
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mt-5 {
   margin-top: 1.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .flex {
   display: flex;
@@ -696,6 +703,9 @@ select {
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-20 {
+  gap: 5rem;
 }
 .gap-4 {
   gap: 1rem;

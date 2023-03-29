@@ -68,7 +68,10 @@ namespace SpaceBoxService.BrailleService.App_Code
                 // Check for contractions
                 foreach (var kvp in ContractionMap)
                 {
-                    if (input.Length - i >= kvp.Key.Length && input.Substring(i, kvp.Key.Length) == kvp.Key)
+                    if (input.Length - i >= kvp.Key.Length
+                        && input.Substring(i, kvp.Key.Length) == kvp.Key
+                        && (i == 0 || !char.IsLetter(input[i - 1])) // Check that the previous character is not a letter
+                        && (i + kvp.Key.Length == input.Length || !char.IsLetter(input[i + kvp.Key.Length]))) // Check that the next character is not a letter
                     {
                         sb.Append(kvp.Value);
                         i += kvp.Key.Length;

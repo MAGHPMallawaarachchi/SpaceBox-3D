@@ -104,10 +104,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\BrailleConverter\BrailleConverter.disco" />
-    <None Include="Connected Services\BrailleConverter\configuration91.svcinfo" />
-    <None Include="Connected Services\BrailleConverter\configuration.svcinfo" />
-    <None Include="Connected Services\BrailleConverter\Reference.svcmap">
+    <None Include="Connected Services\BrailleServiceReference\BrailleService.disco" />
+    <None Include="Connected Services\BrailleServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\BrailleServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\BrailleServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -166,8 +166,11 @@
     <Content Include="tailwind.config.js" />
     <Content Include="Content\styles.css" />
     <Content Include="package.json" />
-    <None Include="Connected Services\BrailleConverter\BrailleConverter.wsdl" />
-    <Content Include="Connected Services\BrailleConverter\SpaceBox_3D.BrailleConverter.ConvertToBrailleResponse.datasource">
+    <None Include="Connected Services\BrailleServiceReference\BrailleService.wsdl" />
+    <Content Include="Connected Services\BrailleServiceReference\SpaceBox_3D.BrailleServiceReference.ConvertToBrailleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\BrailleServiceReference\SpaceBox_3D.BrailleServiceReference.GetDotsAmountResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -184,7 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Connected Services\BrailleConverter\Reference.cs">
+    <Compile Include="Connected Services\BrailleServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -258,7 +261,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BrailleConverter\" />
+    <WCFMetadataStorage Include="Connected Services\BrailleServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
