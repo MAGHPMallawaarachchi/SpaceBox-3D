@@ -13,5 +13,15 @@ namespace SpaceBox_3D
         {
 
         }
+
+        protected void ddlSelectShape_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlSelectShape.SelectedValue != "Rectangle")
+            {
+                txtRectangleLength.Visible = false;
+                txtRectangleWidth.Visible = false;
+            }
+        }
+
     }
 }
