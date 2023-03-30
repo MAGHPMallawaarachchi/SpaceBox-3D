@@ -111,8 +111,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Shapes.aspx" />
-    <Content Include="Braille.aspx" />
+    <Content Include="Pages\Shapes.aspx" />
+    <Content Include="Pages\Braille.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -131,7 +131,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\tailwind.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Pages\Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="postcss.config.js" />
     <Content Include="icon.png" />
@@ -192,26 +192,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Shapes.aspx.cs">
+    <Compile Include="Pages\Shapes.aspx.cs">
       <DependentUpon>Shapes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Shapes.aspx.designer.cs">
+    <Compile Include="Pages\Shapes.aspx.designer.cs">
       <DependentUpon>Shapes.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Braille.aspx.cs">
+    <Compile Include="Pages\Braille.aspx.cs">
       <DependentUpon>Braille.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Braille.aspx.designer.cs">
+    <Compile Include="Pages\Braille.aspx.designer.cs">
       <DependentUpon>Braille.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Pages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Pages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
