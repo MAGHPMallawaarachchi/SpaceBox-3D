@@ -16,8 +16,19 @@ namespace SpaceBox_3D
         protected void btnConvert_Click(object sender, EventArgs e)
         {
             BrailleServiceReference.BrailleServiceSoapClient client = new BrailleServiceReference.BrailleServiceSoapClient();
-            string output = client.ConvertToBraille(TextBox.Text);
+            string output = client.ConvertToBraille(txtInput.Text);
             this.Label1.Text = output;
+        }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            txtInput.Text = "";
+        }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            lblDisplayDotAmount.Text = "";
+            txtInput.Text = "";
         }
     }
 }
