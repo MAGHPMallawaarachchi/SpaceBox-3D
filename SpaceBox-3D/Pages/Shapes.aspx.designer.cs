@@ -33,40 +33,130 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.DropDownList ddlSelectShape;
 
         /// <summary>
-        /// lblRectangleLength control.
+        /// lblLength control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRectangleLength;
+        protected global::System.Web.UI.WebControls.Label lblLength;
 
         /// <summary>
-        /// txtRectangleLength control.
+        /// txtLength control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRectangleLength;
+        protected global::System.Web.UI.WebControls.TextBox txtLength;
 
         /// <summary>
-        /// lblRectangleWidth control.
+        /// lblWidth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRectangleWidth;
+        protected global::System.Web.UI.WebControls.Label lblWidth;
 
         /// <summary>
-        /// txtRectangleWidth control.
+        /// txtWidth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRectangleWidth;
+        protected global::System.Web.UI.WebControls.TextBox txtWidth;
+
+        /// <summary>
+        /// lblRadius control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRadius;
+
+        /// <summary>
+        /// txtRadius control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtRadius;
+
+        /// <summary>
+        /// lblCenterPoint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCenterPoint;
+
+        /// <summary>
+        /// txtCenterPoint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCenterPoint;
+
+        /// <summary>
+        /// lblTriangleLength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTriangleLength;
+
+        /// <summary>
+        /// txtTriangleLength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTriangleLength;
+
+        /// <summary>
+        /// lblTriangleHeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTriangleHeight;
+
+        /// <summary>
+        /// txtTriangleHeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTriangleHeight;
+
+        /// <summary>
+        /// lblTraingleBase control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTraingleBase;
+
+        /// <summary>
+        /// txtTriangleBase control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTriangleBase;
 
         /// <summary>
         /// btnConvert control.
@@ -87,22 +177,22 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.Button btnClear;
 
         /// <summary>
-        /// Label3 control.
+        /// lblDotAmount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblDotAmount;
 
         /// <summary>
-        /// DotAmount control.
+        /// lblDisplayDotAmount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DotAmount;
+        protected global::System.Web.UI.WebControls.Label lblDisplayDotAmount;
 
         /// <summary>
         /// braillePreviewPanel control.
@@ -114,13 +204,13 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.Panel braillePreviewPanel;
 
         /// <summary>
-        /// Label2 control.
+        /// lblBraillePreview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblBraillePreview;
 
         /// <summary>
         /// btnPrint control.
