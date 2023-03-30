@@ -5,7 +5,9 @@ using System.Web;
 
 namespace SpaceBoxService.ShapesService.App_Code
 {
-    public class DrawShape
+    public interface Shape
     {
+        double GetPerimeter();
     }
+
 }

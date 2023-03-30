@@ -1,7 +1,9 @@
 ﻿using SpaceBoxService.ShapesService.App_Code;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Services;
 
@@ -19,9 +21,10 @@ namespace SpaceBoxService.ShapesService
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public string CreateCircle(int radius)
         {
-            return "Hello World";
+            Circle circle = new Circle();
+            return circle.ToBrailleDots(radius);
         }
     }
 }

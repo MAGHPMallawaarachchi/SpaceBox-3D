@@ -111,6 +111,13 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ShapesServiceReference\ShapesService.disco" />
+    <None Include="Connected Services\ShapesServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ShapesServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\ShapesServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Shapes.aspx" />
     <Content Include="Braille.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -174,6 +181,10 @@
     <Content Include="Connected Services\BrailleServiceReference\SpaceBox_3D.BrailleServiceReference.GetDotsAmountResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\ShapesServiceReference\ShapesService.wsdl" />
+    <Content Include="Connected Services\ShapesServiceReference\SpaceBox_3D.ShapesServiceReference.CreateCircleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -189,6 +200,11 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Connected Services\BrailleServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ShapesServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -263,6 +279,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\BrailleServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\ShapesServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

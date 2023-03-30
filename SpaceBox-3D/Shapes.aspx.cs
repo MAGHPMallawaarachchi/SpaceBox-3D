@@ -11,6 +11,8 @@ namespace SpaceBox_3D
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ShapesServiceReference.ShapesServiceSoapClient client = new ShapesServiceReference.ShapesServiceSoapClient();
+
             ShowCircle();
             HideRectangle();
             HideTriangle();
