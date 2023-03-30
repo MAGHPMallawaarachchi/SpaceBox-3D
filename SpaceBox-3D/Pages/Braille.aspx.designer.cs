@@ -78,13 +78,13 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.Panel braillePreviewPanel;
 
         /// <summary>
-        /// Label2 control.
+        /// lblBraillePreview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblBraillePreview;
 
         /// <summary>
         /// btnPrint control.

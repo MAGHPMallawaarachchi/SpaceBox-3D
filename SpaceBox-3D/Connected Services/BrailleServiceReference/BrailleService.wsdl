@@ -98,10 +98,10 @@
   </wsdl:binding>
   <wsdl:service name="BrailleService">
     <wsdl:port name="BrailleServiceSoap" binding="tns:BrailleServiceSoap">
-      <soap:address location="https://localhost:44363/BrailleService/BrailleService.asmx" />
+      <soap:address location="https://localhost:44363/BrailleService.asmx" />
     </wsdl:port>
     <wsdl:port name="BrailleServiceSoap12" binding="tns:BrailleServiceSoap12">
-      <soap12:address location="https://localhost:44363/BrailleService/BrailleService.asmx" />
+      <soap12:address location="https://localhost:44363/BrailleService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

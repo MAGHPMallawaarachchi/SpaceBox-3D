@@ -17,7 +17,10 @@ namespace SpaceBox_3D
         {
             BrailleServiceReference.BrailleServiceSoapClient client = new BrailleServiceReference.BrailleServiceSoapClient();
             string output = client.ConvertToBraille(txtInput.Text);
-            this.Label1.Text = output;
+            int dotAmount = client.GetDotsAmount(txtInput.Text);
+
+            this.lblBraillePreview.Text = output;
+            this.lblDisplayDotAmount.Text = dotAmount.ToString();
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
@@ -29,6 +32,7 @@ namespace SpaceBox_3D
         {
             lblDisplayDotAmount.Text = "";
             txtInput.Text = "";
+            lblBraillePreview.Text = "";
         }
     }
 }
