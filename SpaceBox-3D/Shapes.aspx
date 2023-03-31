@@ -42,17 +42,17 @@
 
                             <asp:TextBox ID="txtCenterPoint" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                            <asp:Label ID="lblTriangleLength" runat="server" Font-Names="Readex Pro Deca" Font-Size="12pt" ForeColor="White" Text="Length"></asp:Label>
+                            <asp:Label ID="lblSide_a" runat="server" Font-Names="Readex Pro Deca" Font-Size="12pt" ForeColor="White" Text="Side a"></asp:Label>
 
-                            <asp:TextBox ID="txtTriangleLength" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
+                            <asp:TextBox ID="txtSide_a" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                            <asp:Label ID="lblTriangleHeight" runat="server" Font-Names="Readex Pro Deca" Font-Size="12pt" ForeColor="White" Text="Height" CssClass="mt-2"></asp:Label>
+                            <asp:Label ID="lblSide_b" runat="server" Font-Names="Readex Pro Deca" Font-Size="12pt" ForeColor="White" Text="Side b" CssClass="mt-2"></asp:Label>
 
-                            <asp:TextBox ID="txtTriangleHeight" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
+                            <asp:TextBox ID="txtSide_b" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                            <asp:Label ID="lblTraingleBase" runat="server" Font-Names="Readex Pro Deca" Font-Size="12pt" ForeColor="White" Text="Base" CssClass="mt-2"></asp:Label>
+                            <asp:Label ID="lblSide_c" runat="server" Font-Names="Readex Pro Deca" Font-Size="12pt" ForeColor="White" Text="Side c" CssClass="mt-2"></asp:Label>
 
-                            <asp:TextBox ID="txtTriangleBase" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
+                            <asp:TextBox ID="txtSide_c" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
                         </div>
 
                         <div class="flex flex-row gap-5 justify-center">

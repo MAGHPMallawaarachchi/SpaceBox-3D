@@ -64,13 +64,13 @@ namespace SpaceBox_3D
 
         private void HideTriangle()
         {
-            lblTraingleBase.Visible = false;
-            lblTriangleHeight.Visible = false;
-            lblTriangleLength.Visible = false;
+            lblSide_a.Visible = false;
+            lblSide_b.Visible = false;
+            lblSide_c.Visible = false;
 
-            txtTriangleBase.Visible = false;
-            txtTriangleLength.Visible = false;
-            txtTriangleHeight.Visible = false;
+            txtSide_a.Visible = false;
+            txtSide_b.Visible = false;
+            txtSide_c.Visible = false;
         }
 
         private void ShowCircle()
@@ -93,13 +93,13 @@ namespace SpaceBox_3D
 
         private void ShowTriangle()
         {
-            lblTraingleBase.Visible = true;
-            lblTriangleHeight.Visible = true;
-            lblTriangleLength.Visible = true;
+            lblSide_a.Visible = true;
+            lblSide_b.Visible = true;
+            lblSide_c.Visible = true;
 
-            txtTriangleBase.Visible = true;
-            txtTriangleLength.Visible = true;
-            txtTriangleHeight.Visible = true;
+            txtSide_a.Visible = true;
+            txtSide_b.Visible = true;
+            txtSide_c.Visible = true;
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
@@ -130,9 +130,9 @@ namespace SpaceBox_3D
                 HideRectangle();
                 HideCircle();
 
-                txtTriangleBase.Text = "";
-                txtTriangleHeight.Text = "";
-                txtTriangleLength.Text = "";
+                txtSide_a.Text = "";
+                txtSide_c.Text = "";
+                txtSide_b.Text = "";
             } 
             
         }
@@ -149,9 +149,9 @@ namespace SpaceBox_3D
             txtLength.Text = "";
             txtWidth.Text = "";
 
-            txtTriangleBase.Text = "";
-            txtTriangleHeight.Text = "";
-            txtTriangleLength.Text = "";
+            txtSide_a.Text = "";
+            txtSide_c.Text = "";
+            txtSide_b.Text = "";
         }
 
         protected void btnConvert_Click(object sender, EventArgs e)
@@ -179,15 +179,15 @@ namespace SpaceBox_3D
             }
             else if (selectedShape == "Triangle")
             {
-                triangleBase = double.Parse(txtTriangleBase.Text);
-                triangleHeight = double.Parse(txtTriangleHeight.Text);
-                triangleLength = double.Parse(txtTriangleLength.Text);
+                triangleBase = double.Parse(txtSide_a.Text);
+                triangleHeight = double.Parse(txtSide_c.Text);
+                triangleLength = double.Parse(txtSide_b.Text);
             }
 
             // Call the CountBrailleDots method with the appropriate parameters
             int brailleDots = client.CountBrailleDots(selectedShape, radius, length, width, triangleBase, triangleHeight, triangleLength);
 
-            lblBraillePreview.Text = brailleDots.ToString();
+            lblDisplayDotAmount.Text = brailleDots.ToString();
 
         }
     }

@@ -105,58 +105,58 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.TextBox txtCenterPoint;
 
         /// <summary>
-        /// lblTriangleLength control.
+        /// lblSide_a control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTriangleLength;
+        protected global::System.Web.UI.WebControls.Label lblSide_a;
 
         /// <summary>
-        /// txtTriangleLength control.
+        /// txtSide_a control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTriangleLength;
+        protected global::System.Web.UI.WebControls.TextBox txtSide_a;
 
         /// <summary>
-        /// lblTriangleHeight control.
+        /// lblSide_b control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTriangleHeight;
+        protected global::System.Web.UI.WebControls.Label lblSide_b;
 
         /// <summary>
-        /// txtTriangleHeight control.
+        /// txtSide_b control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTriangleHeight;
+        protected global::System.Web.UI.WebControls.TextBox txtSide_b;
 
         /// <summary>
-        /// lblTraingleBase control.
+        /// lblSide_c control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTraingleBase;
+        protected global::System.Web.UI.WebControls.Label lblSide_c;
 
         /// <summary>
-        /// txtTriangleBase control.
+        /// txtSide_c control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTriangleBase;
+        protected global::System.Web.UI.WebControls.TextBox txtSide_c;
 
         /// <summary>
         /// btnConvert control.
