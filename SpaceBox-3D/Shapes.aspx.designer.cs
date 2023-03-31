@@ -33,6 +33,15 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.DropDownList ddlSelectShape;
 
         /// <summary>
+        /// rectangle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl rectangle;
+
+        /// <summary>
         /// lblLength control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace SpaceBox_3D
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLength;
+
+        /// <summary>
+        /// ddlLength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLength;
 
         /// <summary>
         /// lblWidth control.
@@ -69,6 +87,24 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.TextBox txtWidth;
 
         /// <summary>
+        /// ddlWidth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlWidth;
+
+        /// <summary>
+        /// circle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl circle;
+
+        /// <summary>
         /// lblRadius control.
         /// </summary>
         /// <remarks>
@@ -85,6 +121,15 @@ namespace SpaceBox_3D
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRadius;
+
+        /// <summary>
+        /// ddlRadius control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlRadius;
 
         /// <summary>
         /// lblCenterPoint control.
@@ -105,6 +150,15 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.TextBox txtCenterPoint;
 
         /// <summary>
+        /// triangle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl triangle;
+
+        /// <summary>
         /// lblSide_a control.
         /// </summary>
         /// <remarks>
@@ -121,6 +175,15 @@ namespace SpaceBox_3D
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSide_a;
+
+        /// <summary>
+        /// ddlSide_a control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSide_a;
 
         /// <summary>
         /// lblSide_b control.
@@ -141,6 +204,15 @@ namespace SpaceBox_3D
         protected global::System.Web.UI.WebControls.TextBox txtSide_b;
 
         /// <summary>
+        /// ddlSide_b control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSide_b;
+
+        /// <summary>
         /// lblSide_c control.
         /// </summary>
         /// <remarks>
@@ -157,6 +229,15 @@ namespace SpaceBox_3D
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSide_c;
+
+        /// <summary>
+        /// ddlSide_c control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSide_c;
 
         /// <summary>
         /// btnConvert control.

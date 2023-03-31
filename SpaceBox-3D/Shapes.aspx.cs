@@ -24,91 +24,33 @@ namespace SpaceBox_3D
         {
             if (ddlSelectShape.SelectedValue == "Circle")
             {
-                ShowCircle();
-                HideRectangle();
-                HideTriangle();
+                circle.Visible = true;
+                rectangle.Visible = false;
+                triangle.Visible = false;
             }
 
             if (ddlSelectShape.SelectedValue == "Rectangle")
             {
-                ShowRectangle();
-                HideTriangle();
-                HideCircle();
+                circle.Visible = false;
+                rectangle.Visible = true;
+                triangle.Visible = false;
             }
 
             if (ddlSelectShape.SelectedValue == "Triangle")
             {
-                ShowTriangle();
-                HideRectangle();
-                HideCircle();
+                circle.Visible = false;
+                rectangle.Visible = false;
+                triangle.Visible = true;
             }
-        }
-
-        private void HideCircle()
-        {
-            lblRadius.Visible = false;
-            lblCenterPoint.Visible = false;
-
-            txtRadius.Visible = false;
-            txtCenterPoint.Visible = false;
-        }
-
-        private void HideRectangle()
-        {
-            lblLength.Visible = false;
-            lblWidth.Visible = false;
-
-            txtWidth.Visible = false;
-            txtLength.Visible = false;
-        }
-
-        private void HideTriangle()
-        {
-            lblSide_a.Visible = false;
-            lblSide_b.Visible = false;
-            lblSide_c.Visible = false;
-
-            txtSide_a.Visible = false;
-            txtSide_b.Visible = false;
-            txtSide_c.Visible = false;
-        }
-
-        private void ShowCircle()
-        {
-            lblRadius.Visible = true;
-            lblCenterPoint.Visible = true;
-
-            txtRadius.Visible = true;
-            txtCenterPoint.Visible = true;
-        }
-
-        private void ShowRectangle()
-        {
-            lblLength.Visible = true;
-            lblWidth.Visible = true;
-
-            txtWidth.Visible = true;
-            txtLength.Visible = true;
-        }
-
-        private void ShowTriangle()
-        {
-            lblSide_a.Visible = true;
-            lblSide_b.Visible = true;
-            lblSide_c.Visible = true;
-
-            txtSide_a.Visible = true;
-            txtSide_b.Visible = true;
-            txtSide_c.Visible = true;
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
         {
             if (ddlSelectShape.SelectedValue == "Circle")
             {
-                ShowCircle();
-                HideRectangle();
-                HideTriangle();
+                circle.Visible = true;
+                rectangle.Visible = false;
+                triangle.Visible = false;
 
                 txtRadius.Text = "";
                 txtCenterPoint.Text = "";
@@ -116,9 +58,9 @@ namespace SpaceBox_3D
 
             if (ddlSelectShape.SelectedValue == "Rectangle")
             {
-                ShowRectangle();
-                HideTriangle();
-                HideCircle();
+                circle.Visible = false;
+                rectangle.Visible = true;
+                triangle.Visible = false;
 
                 txtLength.Text = "";
                 txtWidth.Text = "";
@@ -126,9 +68,9 @@ namespace SpaceBox_3D
 
             if (ddlSelectShape.SelectedValue == "Triangle")
             {
-                ShowTriangle();
-                HideRectangle();
-                HideCircle();
+                circle.Visible = false;
+                rectangle.Visible = false;
+                triangle.Visible = true;
 
                 txtSide_a.Text = "";
                 txtSide_c.Text = "";

@@ -671,11 +671,17 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
-.mt-5 {
-  margin-top: 1.25rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
 }
 .flex {
   display: flex;
@@ -698,14 +704,17 @@ select {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
 .gap-1 {
   gap: 0.25rem;
 }
 .gap-2 {
   gap: 0.5rem;
-}
-.gap-20 {
-  gap: 5rem;
 }
 .gap-4 {
   gap: 1rem;
@@ -716,11 +725,20 @@ select {
 .gap-\[100px\] {
   gap: 100px;
 }
-.gap-\[200px\] {
-  gap: 200px;
-}
 .gap-\[80px\] {
   gap: 80px;
+}
+.gap-32 {
+  gap: 8rem;
+}
+.gap-36 {
+  gap: 9rem;
+}
+.gap-20 {
+  gap: 5rem;
+}
+.gap-24 {
+  gap: 6rem;
 }
 .border-0 {
   border-width: 0px;
@@ -760,9 +778,6 @@ select {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.pt-2 {
-  padding-top: 0.5rem;
 }
 .font-readex {
   font-family: Readex Pro, sans-serif;
