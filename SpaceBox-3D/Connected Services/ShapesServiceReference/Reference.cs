@@ -15,27 +15,27 @@ namespace SpaceBox_3D.ShapesServiceReference {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ShapesServiceReference.ShapesServiceSoap")]
     public interface ShapesServiceSoap {
         
-        // CODEGEN: Generating message contract since element name CreateCircleResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateCircle", ReplyAction="*")]
-        SpaceBox_3D.ShapesServiceReference.CreateCircleResponse CreateCircle(SpaceBox_3D.ShapesServiceReference.CreateCircleRequest request);
+        // CODEGEN: Generating message contract since element name shapeType from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CountBrailleDots", ReplyAction="*")]
+        SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse CountBrailleDots(SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateCircle", ReplyAction="*")]
-        System.Threading.Tasks.Task<SpaceBox_3D.ShapesServiceReference.CreateCircleResponse> CreateCircleAsync(SpaceBox_3D.ShapesServiceReference.CreateCircleRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CountBrailleDots", ReplyAction="*")]
+        System.Threading.Tasks.Task<SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse> CountBrailleDotsAsync(SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateCircleRequest {
+    public partial class CountBrailleDotsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateCircle", Namespace="http://tempuri.org/", Order=0)]
-        public SpaceBox_3D.ShapesServiceReference.CreateCircleRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CountBrailleDots", Namespace="http://tempuri.org/", Order=0)]
+        public SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequestBody Body;
         
-        public CreateCircleRequest() {
+        public CountBrailleDotsRequest() {
         }
         
-        public CreateCircleRequest(SpaceBox_3D.ShapesServiceReference.CreateCircleRequestBody Body) {
+        public CountBrailleDotsRequest(SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -44,50 +44,74 @@ namespace SpaceBox_3D.ShapesServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateCircleRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public double radius;
-        
-        public CreateCircleRequestBody() {
-        }
-        
-        public CreateCircleRequestBody(double radius) {
-            this.radius = radius;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateCircleResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateCircleResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SpaceBox_3D.ShapesServiceReference.CreateCircleResponseBody Body;
-        
-        public CreateCircleResponse() {
-        }
-        
-        public CreateCircleResponse(SpaceBox_3D.ShapesServiceReference.CreateCircleResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateCircleResponseBody {
+    public partial class CountBrailleDotsRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string CreateCircleResult;
+        public string shapeType;
         
-        public CreateCircleResponseBody() {
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public double radius;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public double length;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public double width;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public double side_a;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public double side_b;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=6)]
+        public double side_c;
+        
+        public CountBrailleDotsRequestBody() {
         }
         
-        public CreateCircleResponseBody(string CreateCircleResult) {
-            this.CreateCircleResult = CreateCircleResult;
+        public CountBrailleDotsRequestBody(string shapeType, double radius, double length, double width, double side_a, double side_b, double side_c) {
+            this.shapeType = shapeType;
+            this.radius = radius;
+            this.length = length;
+            this.width = width;
+            this.side_a = side_a;
+            this.side_b = side_b;
+            this.side_c = side_c;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CountBrailleDotsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CountBrailleDotsResponse", Namespace="http://tempuri.org/", Order=0)]
+        public SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponseBody Body;
+        
+        public CountBrailleDotsResponse() {
+        }
+        
+        public CountBrailleDotsResponse(SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CountBrailleDotsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int CountBrailleDotsResult;
+        
+        public CountBrailleDotsResponseBody() {
+        }
+        
+        public CountBrailleDotsResponseBody(int CountBrailleDotsResult) {
+            this.CountBrailleDotsResult = CountBrailleDotsResult;
         }
     }
     
@@ -119,28 +143,40 @@ namespace SpaceBox_3D.ShapesServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SpaceBox_3D.ShapesServiceReference.CreateCircleResponse SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap.CreateCircle(SpaceBox_3D.ShapesServiceReference.CreateCircleRequest request) {
-            return base.Channel.CreateCircle(request);
+        SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap.CountBrailleDots(SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest request) {
+            return base.Channel.CountBrailleDots(request);
         }
         
-        public string CreateCircle(double radius) {
-            SpaceBox_3D.ShapesServiceReference.CreateCircleRequest inValue = new SpaceBox_3D.ShapesServiceReference.CreateCircleRequest();
-            inValue.Body = new SpaceBox_3D.ShapesServiceReference.CreateCircleRequestBody();
+        public int CountBrailleDots(string shapeType, double radius, double length, double width, double side_a, double side_b, double side_c) {
+            SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest inValue = new SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest();
+            inValue.Body = new SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequestBody();
+            inValue.Body.shapeType = shapeType;
             inValue.Body.radius = radius;
-            SpaceBox_3D.ShapesServiceReference.CreateCircleResponse retVal = ((SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap)(this)).CreateCircle(inValue);
-            return retVal.Body.CreateCircleResult;
+            inValue.Body.length = length;
+            inValue.Body.width = width;
+            inValue.Body.side_a = side_a;
+            inValue.Body.side_b = side_b;
+            inValue.Body.side_c = side_c;
+            SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse retVal = ((SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap)(this)).CountBrailleDots(inValue);
+            return retVal.Body.CountBrailleDotsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SpaceBox_3D.ShapesServiceReference.CreateCircleResponse> SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap.CreateCircleAsync(SpaceBox_3D.ShapesServiceReference.CreateCircleRequest request) {
-            return base.Channel.CreateCircleAsync(request);
+        System.Threading.Tasks.Task<SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse> SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap.CountBrailleDotsAsync(SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest request) {
+            return base.Channel.CountBrailleDotsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SpaceBox_3D.ShapesServiceReference.CreateCircleResponse> CreateCircleAsync(double radius) {
-            SpaceBox_3D.ShapesServiceReference.CreateCircleRequest inValue = new SpaceBox_3D.ShapesServiceReference.CreateCircleRequest();
-            inValue.Body = new SpaceBox_3D.ShapesServiceReference.CreateCircleRequestBody();
+        public System.Threading.Tasks.Task<SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse> CountBrailleDotsAsync(string shapeType, double radius, double length, double width, double side_a, double side_b, double side_c) {
+            SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest inValue = new SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequest();
+            inValue.Body = new SpaceBox_3D.ShapesServiceReference.CountBrailleDotsRequestBody();
+            inValue.Body.shapeType = shapeType;
             inValue.Body.radius = radius;
-            return ((SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap)(this)).CreateCircleAsync(inValue);
+            inValue.Body.length = length;
+            inValue.Body.width = width;
+            inValue.Body.side_a = side_a;
+            inValue.Body.side_b = side_b;
+            inValue.Body.side_c = side_c;
+            return ((SpaceBox_3D.ShapesServiceReference.ShapesServiceSoap)(this)).CountBrailleDotsAsync(inValue);
         }
     }
 }

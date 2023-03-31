@@ -11,14 +11,16 @@ namespace SpaceBox_3D
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ShapesServiceReference.ShapesServiceSoapClient client = new ShapesServiceReference.ShapesServiceSoapClient();
 
-            ShowCircle();
-            HideRectangle();
-            HideTriangle();
+            Reload();
         }
 
         protected void ddlSelectShape_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Reload();
+        }
+
+        private void Reload()
         {
             if (ddlSelectShape.SelectedValue == "Circle")
             {
@@ -34,11 +36,11 @@ namespace SpaceBox_3D
                 HideCircle();
             }
 
-            if ( ddlSelectShape.SelectedValue == "Triangle")
+            if (ddlSelectShape.SelectedValue == "Triangle")
             {
                 ShowTriangle();
                 HideRectangle();
-                HideCircle() ;
+                HideCircle();
             }
         }
 
@@ -150,6 +152,43 @@ namespace SpaceBox_3D
             txtTriangleBase.Text = "";
             txtTriangleHeight.Text = "";
             txtTriangleLength.Text = "";
+        }
+
+        protected void btnConvert_Click(object sender, EventArgs e)
+        {
+            ShapesServiceReference.ShapesServiceSoapClient client = new ShapesServiceReference.ShapesServiceSoapClient();
+
+            string selectedShape = ddlSelectShape.SelectedValue;
+
+            double radius = 0;
+            double length = 0;
+            double width = 0;
+            double triangleBase = 0;
+            double triangleHeight = 0;
+            double triangleLength = 0;
+
+            // Get the values of the shape parameters from the textboxes
+            if (selectedShape == "Circle")
+            {
+                radius = double.Parse(txtRadius.Text);
+            }
+            else if (selectedShape == "Rectangle")
+            {
+                length = double.Parse(txtLength.Text);
+                width = double.Parse(txtWidth.Text);
+            }
+            else if (selectedShape == "Triangle")
+            {
+                triangleBase = double.Parse(txtTriangleBase.Text);
+                triangleHeight = double.Parse(txtTriangleHeight.Text);
+                triangleLength = double.Parse(txtTriangleLength.Text);
+            }
+
+            // Call the CountBrailleDots method with the appropriate parameters
+            int brailleDots = client.CountBrailleDots(selectedShape, radius, length, width, triangleBase, triangleHeight, triangleLength);
+
+            lblBraillePreview.Text = brailleDots.ToString();
+
         }
     }
 }

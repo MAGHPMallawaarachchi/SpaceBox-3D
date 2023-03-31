@@ -14,44 +14,17 @@ namespace SpaceBoxService.ShapesService.App_Code
 
         public double GetPerimeter()
         {
-            return radius*3.14*2;
+            return radius*Math.PI*2;
         }
 
-        public string ToBrailleDots(int radius)
+        public int CountBrailleDots()
         {
-            int diameter = radius * 2;
-            int[,] braille = new int[diameter, diameter];
+            double perimeter = GetPerimeter();
 
-            for (int i = 0; i < diameter; i++)
-            {
-                for (int j = 0; j < diameter; j++)
-                {
-                    int x = i - radius;
-                    int y = j - radius;
-                    if (x * x + y * y <= radius * radius)
-                    {
-                        braille[i, j] = 1;
-                    }
-                }
-            }
+            // Calculate the number of Braille dots required to draw the circle
+            double circumferenceInDots = perimeter / 3.0; // Assuming each dot takes up 3 units of space
 
-            string output = "";
-            for (int i = 0; i < diameter; i += 4)
-            {
-                for (int j = 0; j < diameter; j += 2)
-                {
-                    int value = 0;
-                    value += braille[i, j] * 1;
-                    value += braille[i, j + 1] * 2;
-                    value += braille[i + 1, j] * 4;
-                    value += braille[i + 1, j + 1] * 8;
-                    char brailleChar = (char)(0x2800 + value);
-                    output += brailleChar;
-                }
-                output += "\n";
-            }
-
-            return output;
+            return (int)Math.Ceiling(circumferenceInDots);
         }
 
     }
