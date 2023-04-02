@@ -6,10 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using SpaceBox_3D.ShapesServiceReference;
 using SpaceBoxService.ShapesService.App_Code;
+using ShapeParameters = SpaceBox_3D.ShapesServiceReference.ShapeParameters;
 
 namespace SpaceBox_3D
 {
-    public partial class About : System.Web.UI.Page
+    public partial class Shapes : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -143,7 +144,7 @@ namespace SpaceBox_3D
                     shapeParams.SideC = double.Parse(txtSide_c.Text);
             }
 
-            int DotAmount = client.CalculateRequiredDotsForShape(selectedShape, shapeParams);
+            int DotAmount = client.CalculateRequiredDotsForShape(selectedShape,shapeParams);
             lblDisplayDotAmount.Text = DotAmount.ToString();
 
         }

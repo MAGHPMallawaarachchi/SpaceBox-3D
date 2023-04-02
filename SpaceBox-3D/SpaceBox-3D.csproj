@@ -182,7 +182,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\ShapesServiceReference\ShapesService.wsdl" />
-    <Content Include="Connected Services\ShapesServiceReference\SpaceBox_3D.ShapesServiceReference.CalculateDotAmountResponse.datasource">
+    <Content Include="Connected Services\ShapesServiceReference\SpaceBox_3D.ShapesServiceReference.CalculateRequiredDotsForShapeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
