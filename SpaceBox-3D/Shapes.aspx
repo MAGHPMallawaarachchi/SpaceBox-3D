@@ -36,7 +36,7 @@
                                 <div class="flex gap-2 mb-2">
                                     <asp:TextBox ID="txtLength" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
                             
-                                    <asp:DropDownList ID="ddlLength" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-primary-yellow shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow focus:border-primary-yellow" AutoPostBack="True">
+                                    <asp:DropDownList ID="ddlLength" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-maincolor shadow-sm focus:outline-none focus:ring-2 focus:ring-maincolor focus:border-maincolor" AutoPostBack="True">
                                         <asp:ListItem>mm</asp:ListItem>
                                         <asp:ListItem>cm</asp:ListItem>
                                     </asp:DropDownList>
@@ -47,7 +47,7 @@
                                 <div class="flex gap-2 mb-2">
                                     <asp:TextBox ID="txtWidth" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                                    <asp:DropDownList ID="ddlWidth" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-primary-yellow shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow focus:border-primary-yellow" AutoPostBack="True">
+                                    <asp:DropDownList ID="ddlWidth" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-maincolor shadow-sm focus:outline-none focus:ring-2 focus:ring-maincolor focus:border-maincolor" AutoPostBack="True">
                                         <asp:ListItem>mm</asp:ListItem>
                                         <asp:ListItem>cm</asp:ListItem>
                                     </asp:DropDownList>
@@ -63,7 +63,7 @@
                                 <div class="flex gap-2 mb-2">
                                     <asp:TextBox ID="txtRadius" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                                    <asp:DropDownList ID="ddlRadius" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-primary-yellow shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow focus:border-primary-yellow" AutoPostBack="True">
+                                    <asp:DropDownList ID="ddlRadius" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-maincolor shadow-sm focus:outline-none focus:ring-2 focus:ring-maincolor focus:border-maincolor" AutoPostBack="True">
                                         <asp:ListItem>mm</asp:ListItem>
                                         <asp:ListItem>cm</asp:ListItem>
                                     </asp:DropDownList>
@@ -82,7 +82,7 @@
                                 <div class="flex gap-2 mb-2">
                                     <asp:TextBox ID="txtSide_a" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                                    <asp:DropDownList ID="ddlSide_a" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-primary-yellow shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow focus:border-primary-yellow" AutoPostBack="True">
+                                    <asp:DropDownList ID="ddlSide_a" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-maincolor shadow-sm focus:outline-none focus:ring-2 focus:ring-maincolor focus:border-maincolor" AutoPostBack="True">
                                             <asp:ListItem>mm</asp:ListItem>
                                             <asp:ListItem>cm</asp:ListItem>
                                     </asp:DropDownList>
@@ -93,7 +93,7 @@
                                 <div class="flex gap-2 mb-2">
                                     <asp:TextBox ID="txtSide_b" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                                    <asp:DropDownList ID="ddlSide_b" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-primary-yellow shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow focus:border-primary-yellow" AutoPostBack="True">
+                                    <asp:DropDownList ID="ddlSide_b" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-maincolor shadow-sm focus:outline-none focus:ring-2 focus:ring-maincolor focus:border-maincolor" AutoPostBack="True">
                                         <asp:ListItem>mm</asp:ListItem>
                                         <asp:ListItem>cm</asp:ListItem>
                                     </asp:DropDownList>
@@ -104,7 +104,7 @@
                                 <div class="flex gap-2">
                                     <asp:TextBox ID="txtSide_c" runat="server" BackColor="#3B3B3B" ForeColor="White" Width="294px" Height="40px" CssClass="px-4 py-2 border-0 border-primary-grey shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-grey focus:border-primary-grey"></asp:TextBox>
 
-                                    <asp:DropDownList ID="ddlSide_c" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-primary-yellow shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-yellow focus:border-primary-yellow" AutoPostBack="True">
+                                    <asp:DropDownList ID="ddlSide_c" runat="server" BackColor="#3B3B3B" DataTextField="Select a shape" ForeColor="White" Width="80px" height="40px" CssClass="border-0 border-maincolor shadow-sm focus:outline-none focus:ring-2 focus:ring-maincolor focus:border-maincolor" AutoPostBack="True">
                                         <asp:ListItem>mm</asp:ListItem>
                                         <asp:ListItem>cm</asp:ListItem>
                                     </asp:DropDownList>

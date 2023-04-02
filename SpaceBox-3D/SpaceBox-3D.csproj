@@ -182,7 +182,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\ShapesServiceReference\ShapesService.wsdl" />
-    <Content Include="Connected Services\ShapesServiceReference\SpaceBox_3D.ShapesServiceReference.CountBrailleDotsResponse.datasource">
+    <Content Include="Connected Services\ShapesServiceReference\SpaceBox_3D.ShapesServiceReference.CalculateDotAmountResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -280,6 +280,12 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\BrailleServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\ShapesServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpaceBoxService\SpaceBoxService.csproj">
+      <Project>{91FCCC5C-2108-4076-A7D8-C481F9E2DE7D}</Project>
+      <Name>SpaceBoxService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

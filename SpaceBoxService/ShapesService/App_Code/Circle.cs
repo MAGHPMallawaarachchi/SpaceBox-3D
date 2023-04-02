@@ -1,31 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Web;
 
 namespace SpaceBoxService.ShapesService.App_Code
 {
     public class Circle : Shape
     {
-        public double radius { get; set; }
-        public Point Center { get; set; }
+        private double radius;
 
-        public double GetPerimeter()
+        public ShapeParameters GetParameters()
         {
-            return radius*Math.PI*2;
+            return new ShapeParameters { Radius = radius };
         }
 
-        public int CountBrailleDots()
+        public void SetParameters(ShapeParameters parameters)
         {
-            double perimeter = GetPerimeter();
+            if (parameters.Radius <= 0)
+            {
+                throw new ArgumentException("Invalid radius for Circle");
+            }
 
-            // Calculate the number of Braille dots required to draw the circle
-            double circumferenceInDots = perimeter / 3.0; // Assuming each dot takes up 3 units of space
-
-            return (int)Math.Ceiling(circumferenceInDots);
+            radius = parameters.Radius;
         }
 
+        public int CalculateRequiredDots()
+        {
+            //standard diameter of a braille dot (1.6mm) + standard space between two braille dots (2.5mm)
+            double standard = 4.1;
+            return (int)Math.Round(2 * radius * Math.PI / standard);
+        }
     }
 }

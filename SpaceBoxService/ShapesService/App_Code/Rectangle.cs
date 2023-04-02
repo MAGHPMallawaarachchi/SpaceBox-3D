@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Web;
 
@@ -8,22 +7,31 @@ namespace SpaceBoxService.ShapesService.App_Code
 {
     public class Rectangle : Shape
     {
-        public double length { get; set; }
-        public double width { get; set; }
+        private double length;
+        private double width;
 
-        public double GetPerimeter()
+        public Rectangle()
         {
-            return (length + width) * 2;
+            length = 0;
+            width = 0;
         }
 
-        public int CountBrailleDots()
+        public ShapeParameters GetParameters()
         {
-            double perimeter = GetPerimeter();
+            return new ShapeParameters { Length = length, Width = width };
+        }
 
-            // Calculate the number of Braille dots required to draw the rectangle
-            double perimeterInDots = perimeter / 3.0; // Assuming each dot takes up 3 units of space
+        public void SetParameters(ShapeParameters parameters)
+        {
+            length = parameters.Length;
+            width = parameters.Width;
+        }
 
-            return (int)Math.Ceiling(perimeterInDots);
+        public int CalculateRequiredDots()
+        {
+            //standard diameter of a braille dot (1.6mm) + standard space between two braille dots (2.5mm)
+            double standard = 4.1;
+            return (int)Math.Round(((width * 2) + (length * 2)) / standard);
         }
     }
 }

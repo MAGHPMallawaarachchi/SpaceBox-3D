@@ -7,25 +7,37 @@ namespace SpaceBoxService.ShapesService.App_Code
 {
     public class Triangle : Shape
     {
-        public double side_a { get; set; }
+        private double sideA;
+        private double sideB;
+        private double sideC;
 
-        public double side_b { get; set; }
-
-        public double side_c { get; set; }
-
-        public double GetPerimeter()
+        public Triangle()
         {
-            return side_a + side_b + side_c;
+            sideA = 0;
+            sideB = 0;
+            sideC = 0;
         }
 
-        public int CountBrailleDots()
+        //Gets the parameters of the shape
+        public ShapeParameters GetParameters()
         {
-            double perimeter = GetPerimeter();
+            return new ShapeParameters { SideA = sideA, SideB = sideB, SideC = sideC };
+        }
 
-            // Calculate the number of Braille dots required to draw the rectangle
-            double perimeterInDots = perimeter / 3.0; // Assuming each dot takes up 3 units of space
+        //Sets the parameters of the shape
+        public void SetParameters(ShapeParameters parameters)
+        {
+            sideA = parameters.SideA;
+            sideB = parameters.SideB;
+            sideC = parameters.SideC;
+        }
 
-            return (int)Math.Ceiling(perimeterInDots);
+        //Calculates and returns the number of dots required to draw this shape
+        public int CalculateRequiredDots()
+        {
+            //standard diameter of a braille dot (1.6mm) + standard space between two braille dots (2.5mm)
+            double standard = 4.1;
+            return (int)Math.Round((sideA + sideB + sideC) / standard);
         }
     }
 }
